@@ -42,8 +42,8 @@ CREATE TABLE `clientes` (
 
 CREATE TABLE `productos` (
   `cod` int(11) NOT NULL,
-  `descripción` text COLLATE utf8mb4_spanish_ci NOT NULL,
-  `precio` decimal(5,2) NOT NULL,
+  `descripcion` text COLLATE utf8mb4_spanish_ci NOT NULL,
+  `precio` float NOT NULL,
   `stock` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 

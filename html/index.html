@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tienda Web V1.0</title>
+	    <style type="text/css">  
+			.container {
+							font-family: 'PT Sans', Vegur, verdana, arial, sans-serif; 
+					   }
+	
+			ul, ol     {
+							padding:0px;
+							margin: 0px;
+                       }
+						
+			.uj li a   {
+							background-color:#000000;
+							color:#ffffff;
+							text-decoration:none;
+							padding: 12px 30px 12px 30px;
+							display:block;
+                       }
+                     			
+			.uj li ul  {
+                            display:none;
+                            position: absolute;
+                            min-width:80px;	
+                        }
+			
+			
+	       .uj li:hover > ul  {
+									display:block;
+									
+                              }
+
+			nav > ul {
+							display: flex;
+							justify-content: center;
+
+				     }
+							  
+			#el li  {
+							list-style-type:none;
+					}
+		 </style>
+	</head>
+	
+	<body>
+        <h1 align="center"><strong>Tienda Web V1.0</strong></h1>
+			
+		<div class="container">
+			<nav class="nav">
+				<ul id ="el" class="uj">
+				
+                  <li><a href="">Productos</a>
+				  
+                      <ul>
+                       <li><a href="insertar.html" class="enlaceboton">Inserta un producto</a></li>
+                       <li><a href="buscar.html" class="enlaceboton">Busca un producto ya existente</a></li>
+                      </ul> 
+					  
+                  </li>
+				  
+				  <li><a href="">Clientes</a>
+				  
+                      <ul>
+						<li><a href="insertarClientes.html" class="enlaceboton">Alta de clientes</a></li>
+						<li><a href="buscarClientes.html" class="enlaceboton">búsqueda de clientes</a></li>
+                      </ul>	
+					  
+                  </li>  
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

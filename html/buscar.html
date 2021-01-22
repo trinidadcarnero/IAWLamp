@@ -1,67 +1,34 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style type="text/css">
-		 #envio { 
-                        padding: 5px 15px 5px 15px;
-                        background:red;
-                        font-size: 15px;
-                        webkit-border-radius: 26;
-                        moz-border-radius: 30;
-                        border-radius: 40px;  
-                    }  
-		.enlaceboton   {  font-family: 'PT Sans', Vegur, verdana, arial, sans-serif; 
-                               font-size: 10pt;
-                               font-weight: bold;
-                               padding: 10px 10px 10px 10px;
-                               background-color:#CCFFFF;
-                               color: #33CC33;
-                               text-decoration: underline;
-                               text-position: left;
-
-                            }
-            .enlaceboton:link,
-            .enlaceboton:visited    {
-                                       border-top: 1px solid #0000FF;
-                                       border-bottom: 2px solid #000099;
-                                       border-left: 3px solid #000099;
-                                       border-right: 1px solid ##0000FF;
-                                    }
-            .enlaceboton:hover  {
-                                   border-top: 2px solid #0000FF;
-                                   border-bottom: 1px solid #000099;
-                                   border-right: 1px solid #0000FF;
-                                   border-left: 3px solid ##000099;
-                                }    
-		 </style>
-		 
-		<title>Tienda Web V1.0</title>
+      <link href="css/buscar.css" rel="stylesheet" type="text/css">	 
+		<title>Tienda Web V2.0</title>
 	</head>
 	
 	<body>
-            <h1 align="center"><strong>Tienda Web V1.0</strong></h1>
+            <h1 align="center"><strong>Tienda Web V2.0</strong></h1>
 			
 			<h2><strong>Buscar producto</strong></h2>
 			
-			<form action="buscarProductos.php" method="post">
+			<form action="php/buscarProductos.php" method="GET">
 			
 				 <label for="opcion">tipo de busqueda</label>
 				 
-                            <select id="opcion" name="tipo">
-                                    <option value="cod" name="cod">Por codigo</option>
-                                    <option value="desc" name="desc">Por descripcion</option>
-                                    <option value="pre" name="pre">Por precio</option>
+                            <select id="opcion" name="opcion">
+                                    <option value="ocod" name="ocod">Por codigo</option>
+                                    <option value="odesc" name="odesc">Por descripcion</option>
+									<option value="opre" name="opre">Por precio</option>
                             </select>
 							
 				</br></br>
 				
-				 Busqueda: <input type="text" id="busqueda" name="busqueda"> </br></br>
+				<label for="fbus"> Busqueda: </label><input type="text" id="ftext" name="ftext"> </br></br>
 
 				 <input type="submit" id="envio" value="enviar"> 
 				 
 			</form>
 			
-			</br> </br> </br>
+			</br> </br> 
 			
 		   <a href="index.html" class="enlaceboton">Volver a la pagina principal</a><br>
 

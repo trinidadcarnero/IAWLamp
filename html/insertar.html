@@ -1,57 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		 <style type="text/css">
-		 #envio { 
-                        padding: 5px 15px 5px 15px;
-                        background:red;
-                        font-size: 15px;
-                        webkit-border-radius: 26;
-                        moz-border-radius: 30;
-                        border-radius: 40px;  
-                    }  
-		.enlaceboton   {  font-family: 'PT Sans', Vegur, verdana, arial, sans-serif; 
-                               font-size: 10pt;
-                               font-weight: bold;
-                               padding: 10px 10px 10px 10px;
-                               background-color:#CCFFFF;
-                               color: #33CC33;
-                               text-decoration: underline;
-                               text-position: left;
 
-                            }
-            .enlaceboton:link,
-            .enlaceboton:visited    {
-                                       border-top: 1px solid #0000FF;
-                                       border-bottom: 2px solid #000099;
-                                       border-left: 3px solid #000099;
-                                       border-right: 1px solid ##0000FF;
-                                    }
-            .enlaceboton:hover  {
-                                   border-top: 2px solid #0000FF;
-                                   border-bottom: 1px solid #000099;
-                                   border-right: 1px solid #0000FF;
-                                   border-left: 3px solid ##000099;
-                                }    
-		 </style>
-
-		<title>Tienda Web V1.0</title>
+<link href="css/insertar.css" rel="stylesheet" type="text/css">
+    
+    <head>
+        
+		<title>Tienda Web V2.0</title>
 	</head>
 	
 	<body>
-            <h1 align="center"><strong>Tienda Web V1.0</strong></h1></br>
+            <h1 align="center"><strong>Tienda Web V2.0</strong></h1></br>
 			
 			<h2><strong>A&ntilde;adir un nuevo producto</strong></h2>
-			<form action="insertarProducto.php" method="post"  autocomplete="on">
-				codido del producto: <input type="number" style="width:218px;height:15px" name="cod" required placeholder="Solo con numeros enteros"></br></br>
-				<!-- Descripcion : <input type="text" name="descr"></br> -->
-				Descripcion : <input type="text" style="width:265px;height:15px" name="descr" required placeholder="Descripcion de dicho producto"></br></br>
-				Precio : <input type="number"  style="width:302px;height:15px" step="any" name="precio"  size="60" required placeholder="Solo con numeros decimales(9.5) o enteros"><br></br>
-
+			<form action="php/insertarProductos.php" method="GET">
+			<label for="fcod">	codido del producto: </label><input type="number"  name="fcod" ></br></br>
+			<label for="fdesc">	Descripcion :</label> <input type="text" name="fdesc"></br></br>
+			<label for="fprecio"> Precio : </label><input type="number" step="any" name="fprecio"><br></br>
+			<label for="fstock"> Stock : </label><input type="number" name="fstock"><br></br>
 					</br>
 				<input type="submit" id="envio" value="enviar"> 	
 				<input type="reset" value="borrar" name="btborrar"  id="envio">
-                <input type="button" value="cerar" name="btcerrar" onclick="window.close()"  id="envio">
 
 			</form>
 			</br></br>

@@ -1,0 +1,28 @@
+body{
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1{
+    text-align: center;
+}
+#envio { 
+         padding: 5px 15px 5px 15px;
+         background-color:#151515;
+         color: #fff;
+         font-size: 15px;
+         border-radius: 40px;  
+                                }  
+.enlaceboton   {  
+               font-size: 10pt;
+               font-weight: bold;
+               padding: 10px 10px 10px 10px;
+               background-color:#151515;
+               color: #fff;
+               text-decoration: none;
+
+
+                                }
+
+.enlaceboton:hover  {
+                     background:#585858;
+                                }    
+   

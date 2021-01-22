@@ -1,40 +1,9 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		 <style type="text/css">
-		 #envio { 
-                        padding: 5px 15px 5px 15px;
-                        background:red;
-                        font-size: 15px;
-                        webkit-border-radius: 26;
-                        moz-border-radius: 30;
-                        border-radius: 40px;  
-                    }  
-		.enlaceboton   {  font-family: 'PT Sans', Vegur, verdana, arial, sans-serif; 
-                               font-size: 10pt;
-                               font-weight: bold;
-                               padding: 10px 10px 10px 10px;
-                               background-color:#CCFFFF;
-                               color: #33CC33;
-                               text-decoration: underline;
-                               text-position: left;
+   
+<link href="css/insertarClientes.css" rel="stylesheet" type="text/css">
 
-                            }
-            .enlaceboton:link,
-            .enlaceboton:visited    {
-                                       border-top: 1px solid #0000FF;
-                                       border-bottom: 2px solid #000099;
-                                       border-left: 3px solid #000099;
-                                       border-right: 1px solid ##0000FF;
-                                    }
-            .enlaceboton:hover  {
-                                   border-top: 2px solid #0000FF;
-                                   border-bottom: 1px solid #000099;
-                                   border-right: 1px solid #0000FF;
-                                   border-left: 3px solid ##000099;
-                                }    
-		 </style>
-
+   <head>
 		<title>Tienda Web V2.0</title>
 	</head>
 	
@@ -43,24 +12,23 @@
 			
 			<h2><strong>A&ntilde;adir un nuevo cliente</strong></h2>
 			
-			<form action="insertarClientes.php" method="post" >
+			<form action="php/insertarClientes.php" method="post" >
 			
 				
-				Nombre: <input type="text" id="nombre"  pattern="[A-Za-z]{1,30}" title="Introduce un nombre valido" size="30" maxlength="30"  required placeholder="Introduce tu nombre" >  <br> <br>   
+				Nombre: <input type="text" name="nombre" id="nombre"  pattern="[A-Za-z ]{1,30}" title="Introduce un nombre valido" size="30" maxlength="30"  required placeholder="Introduce tu nombre" >  <br> <br>
                             
-				Apellidos: <input type="text" id="apellido"  pattern="[A-Za-z]{1,30}" title="Introduce un Apellido válido" size="30" maxlength="30" required placeholder="Introduce tus Apellidos" >  <br> <br>    
+				Apellidos: <input type="text" name="apellido" id="apellido"  pattern="[A-Za-z ]{1,30}" title="Introduce un Apellido válido" size="30" maxlength="30" required placeholder="Introduce tus Apellidos" >  <br> <br>
                           
-				Dni: <input type="text" style="width:218px;height:15px"  name="dni" pattern="[0-9]{8}[A-Z]" required placeholder="Tu dni (999999999R)"></br></br>
+				Dni: <input type="text" style="width:218px;height:15px"  name="dni" pattern="[0-9]{8}[A-Z]" required placeholder="Tu dni"></br></br>
 				
-				
-				Email : <input type="email" id="email" title="Introduce un correo valido" size="30" maxlength="30" required placeholder="Correo electronico">  <br> <br>
+				Email : <input type="email" name="email" id="email" title="Introduce un correo valido" size="30" maxlength="30" required placeholder="Correo electronico">  <br> <br>
 				
 				Fecha de nacimiento: <input type="date" style="width:218px;height:15px" name="naci" max="2021-12-31"  min="1910-01-01" ></br></br>
 				
 			
 				<input type="submit" id="envio" value="enviar"> 	
 				
-				<input type="reset" value="borrar" name="btborrar"  id="envio">
+				<input type="reset" value="borrar" name="btborrar"  id="reset">
 				
 			</form>
 			

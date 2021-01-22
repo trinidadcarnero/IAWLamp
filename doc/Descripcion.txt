@@ -1,0 +1,25 @@
+
+https://github.com/juancarlosretamero/tiendav2
+│
+├───Pruebas.sql -> Archivo .sql que contiene la información de las tablas que hemos creado
+│    
+│
+└───html
+    │   buscar.html -> Formulario para buscar productos; ya sea por codigo, descripción o precio
+    │   buscarClientes.html -> Formulario para buscar clientes; puede ser por nombre, apellidos o DNI
+    │   index.html -> Página principal
+    │   insertar.html -> Formulario para insertar un producto a la base de datos
+    │   insertarClientes.html -> Formulatio para insertar un cliente en la base de datos
+    │
+    ├───css
+    │       buscar.css -> Hoja de estilos para buscar.html
+    │       buscarClientes.css -> Hoja de estilos para buscarClientes.html
+    │       index.css -> Hoja de estilos para index.html
+    │       insertar.css -> Hoja de estilos para insertar.html
+    │       insertarClientes.css -> Hoja de estilos para insertarClientes.html
+    │
+    └───php
+            buscarClientes.php -> Programa para buscar clientes en nuestra base de datos
+            buscarProductos.php -> Programa para buscar productos en nuestra base de datos
+            insertarClientes.php -> Programa para insertar clientes en nuestra base de datos
+            insertarProductos.php -> Programa para insertar productos en nuestra base de datos

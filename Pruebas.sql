@@ -48,20 +48,6 @@ CREATE TABLE `productos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish_ci;
 
 --
--- Volcado de datos para la tabla `productos`
---
-
-INSERT INTO `productos` (`cod`, `descripción`, `precio`, `stock`) VALUES
-(1, '2', '99.99', 0),
-(3, 'hola', '99.99', 0),
-(4, 'hola', '3.50', 0),
-(6, 'd', '1.00', 0),
-(10, 'hola', '99.00', 0),
-(14, 'j', '98.00', 0),
-(20, 'hola', '7.00', 0),
-(45, 'h', '4.50', 0),
-(111, '11', '1.00', 0),
-(112, 'esta es la prueba', '9.50', 0);
 
 --
 -- Índices para tablas volcadas

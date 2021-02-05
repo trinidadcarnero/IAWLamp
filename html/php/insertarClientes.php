@@ -1,29 +1,33 @@
 <?php
-$servername = "localhost";
-$username = "php";
-$password = "1234";
+  require 'ClassCliente.php';
+  require 'ClassEnvioMail.php';
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+  $servername = "localhost";
+  $database = "pruebas";
+  $username = "php";
+  $password = "1234";
 
-// Insertar Cliente
-$nombre= $_POST["nombre"];
-$apellidos= $_POST["apellido"];
-$dni= $_POST["dni"];
-$email= $_POST["email"];
-$nacimiento= $_POST["naci"];
+  $nombre=$_POST["nombre"];
+  $apellidos=$_POST["apellido"];
+  $dni=$_POST["dni"];
+  $email=$_POST["email"];
+  $fecha_nacimiento=$_POST["fecha_nacimiento"];
 
-$sql ="insert into pruebas.clientes (nombre,apellidos,dni,email,fecha_nacimiento) values ('$nombre','$apellidos','$dni','$email','$nacimiento')";
 
-if (mysqli_query($conn, $sql)==1) {
-    echo "Insertado Correctamente";
-} else {
-    echo "Error Insertando: " . mysqli_error($conn);
-}
 
-mysqli_close($conn);
+  // Se crea la conexion
+  $conn = mysqli_connect($servername, $username, $password, $database);
+  // Se comprueba la conexion
+  if (!$conn) {
+    die("ERROR CONECTANDO: " . mysqli_connect_error());
+  }
+
+
+  $clienteNuevo=new Cliente($nombre,$apellidos,$dni,$email,$fecha_nacimiento);
+  $clienteNuevo->darAlta($conn);
+
+  $miEmail = new envioEmail($nombre, $email);
+  $miEmail->sendMail($conn);
+  $conn-> close();
+
 ?>

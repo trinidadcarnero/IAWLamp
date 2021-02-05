@@ -1,4 +1,7 @@
 <?php
+
+require 'producto.php';
+
 $servername = "localhost";
 $database = "pruebas";
 $username = "php";
@@ -10,17 +13,14 @@ if (!$conn) {
       die("ERROR CONECTANDO: " . mysqli_connect_error());
 }
  
-$cod=$_GET["fcod"];
-$desc=$_GET["fdesc"];
+$codigo=$_GET["fcod"];
+$descripcion=$_GET["fdesc"];
 $precio=$_GET["fprecio"];
 $stock=$_GET["fstock"];
 
-$sql = "INSERT INTO productos (cod, descripcion, precio, stock) VALUES ($cod, '$desc' , $precio, $stock)";
-if (mysqli_query($conn, $sql)) {
-     echo "El nuevo campo ha sido añadido correctamente";
-} 
-else {
-      echo "ERROR INSERTANDO: " . $sql . "<br>" . mysqli_error($conn);
-}
-mysqli_close($conn);
+$productoNuevo=new Producto($codigo,$descripcion,$precio,$stock);
+$productoNuevo->insertar($conn);
+$conn->close();
+
+
 ?>

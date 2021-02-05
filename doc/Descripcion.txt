@@ -23,3 +23,9 @@ https://github.com/juancarlosretamero/tiendav2
             buscarProductos.php -> Programa para buscar productos en nuestra base de datos
             insertarClientes.php -> Programa para insertar clientes en nuestra base de datos
             insertarProductos.php -> Programa para insertar productos en nuestra base de datos
+            clientes.php -> Clase de buscarClientes.php
+            producto.php -> Clase de insertarProductos.php
+            ClassCliente.php -> Clase de insertatClientes.php
+            ClassEnvioMail.php -> Envio email para insertarClientes.php
+            envioProductos.php -> Envio email para insertarProductos.php
+            

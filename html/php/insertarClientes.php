@@ -11,7 +11,7 @@
   $apellidos=$_POST["apellido"];
   $dni=$_POST["dni"];
   $email=$_POST["email"];
-  $fecha_nacimiento=$_POST["fecha_nacimiento"];
+  $fecha_nacimiento=$_POST["naci"];
 
 
 

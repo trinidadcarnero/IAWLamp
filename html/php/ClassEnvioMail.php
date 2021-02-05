@@ -46,16 +46,16 @@
             $mail->SMTPAuth = true;
 
             //Usuario que se logea en gmail - hay que usar la misma dirección de email completa
-            $mail->Username = 'correo_administrador';
+            $mail->Username = 'angel@gmail.com';
 
             //Contraseña de gmail para la SMTP authentication
-            $mail->Password = 'contraseña';
+            $mail->Password = '1234';
 
             //Asignar el 'desde'
-            $mail->setFrom("correo_administrador", "Angel");
+            $mail->setFrom("angel@gmail.com", "Angel");
 
             // reply-to address
-            $mail->addReplyTo("correo_administrador", 'Tienda Web 3.0');
+            $mail->addReplyTo("angel@gmail.com", 'Tienda Web 3.0');
 
             //Dirección de envío
 

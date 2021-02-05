@@ -28,7 +28,7 @@
             if ($conn->query($sql) === TRUE) {
 
                 //hago la construccion del email y lo mando
-                echo "Producto insertado correctamente y notificado por email al Administrador";
+                echo "Cliente dado de alta y notificado por email de dicha alta";
 
 
             } else {

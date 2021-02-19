@@ -16,3 +16,4 @@ CHANGELOG:
 --> 4 de Febrero: Angel del Corral crea los archivos ClassEnvioMail.php y ClassCliente.php. Ademas, modifica el archivo insertarClientes.php  
 --> 4 de Febrero: Juan Carlos Retamero modifica el archivo buscarProductos.php  
 --> 4 de Febrero: Antonio García crea el archivo emailProductos.php y producto.php modifica insertarProductos.php  
+--> 17 de Febrero: Marta Trinidad arregla un fallo (nombres de archivos) en el repositorio

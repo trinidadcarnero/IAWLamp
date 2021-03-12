@@ -5,7 +5,7 @@ services:
         ports:
             - "8088:80"
         volumes:
-            - ./www:/var/www/html
+            - /home/rhea/dockercompose/www:/var/www/html
         links:
             - db
         networks:
@@ -21,8 +21,8 @@ services:
             MYSQL_PASSWORD: 1234
             MYSQL_ROOT_PASSWORD: bolson
         volumes:
-            - ./dump:/docker-entrypoint-initdb.d
-            - ./conf:/etc/mysql/conf.d
+            - /home/rhea/dockercompose/dump:/docker-entrypoint-initdb.d
+            - /home/rhea/dockercompose/conf:/etc/mysql/conf.d
             - persistent:/var/lib/mysql
         networks:
             - default

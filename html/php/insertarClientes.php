@@ -2,7 +2,7 @@
   require 'ClassCliente.php';
   require 'ClassEnvioMail.php';
 
-  $servername = "localhost";
+  $servername = "localhost:33060";
   $database = "pruebas";
   $username = "php";
   $password = "1234";

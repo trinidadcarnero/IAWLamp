@@ -6,7 +6,7 @@ class Clientes{
 
     function __construct(){
 
-        $servername = "localhost";
+        $servername = "localhost:33060";
         $username = "php";
         $password = "1234";
         $this->conn = mysqli_connect($servername, $username, $password);

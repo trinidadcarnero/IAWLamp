@@ -23,7 +23,7 @@ class ClienteTest extends \PHPUnit\Framework\TestCase
     public function testDarAlta()
     {
 
-        $servername = "localhost";
+        $servername = "localhost:33060";
         $username = "php";
         $password = "1234";
         $dbname = "pruebas";
@@ -74,7 +74,7 @@ class ClienteTest extends \PHPUnit\Framework\TestCase
     public function testbuscar()
     {
 
-        $servername = "localhost";
+        $servername = "localhost:33060";
         $username = "php";
         $password = "1234";
         $dbname = "pruebas";
